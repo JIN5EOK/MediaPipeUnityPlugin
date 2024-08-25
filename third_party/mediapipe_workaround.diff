@@ -34,3 +34,16 @@ index a11a23fc..dbb5fe6c 100644
          core::TaskRunner::Create(
              std::move(graph_config), std::move(resolver),
              std::move(packets_callback), std::move(default_executor),
+diff --git a/third_party/opencv_ios_source.bzl b/third_party/opencv_ios_source.bzl
+index 54bb4d5e..9632afd8 100644
+--- a/third_party/opencv_ios_source.bzl
++++ b/third_party/opencv_ios_source.bzl
+@@ -15,7 +15,7 @@
+ """Custom rules for building iOS OpenCV xcframework from sources."""
+ 
+ load(
+-    "@//third_party:opencv_ios_xcframework_files.bzl",
++    "@mediapipe//third_party:opencv_ios_xcframework_files.bzl",
+     "OPENCV_XCFRAMEWORK_INFO_PLIST_PATH",
+     "OPENCV_XCFRAMEWORK_IOS_DEVICE_FILE_PATHS",
+     "OPENCV_XCFRAMEWORK_IOS_SIMULATOR_FILE_PATHS",
